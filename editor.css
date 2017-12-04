@@ -1,0 +1,7 @@
+.wp-block-cedaro-address .blocks-editable {
+	display: inline-block;
+}
+
+.is-country-hidden .address-country-wrapper {
+	display: none;
+}
