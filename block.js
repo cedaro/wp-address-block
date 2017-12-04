@@ -40,7 +40,7 @@
 
 		icon: 'id',
 
-		category: 'common',
+		category: 'formatting',
 
 		keywords: [ __( 'address' ), __( 'vcard' ) ],
 
