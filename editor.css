@@ -2,6 +2,6 @@
 	display: inline-block;
 }
 
-.is-country-hidden .address-country-wrapper {
+.is-country-hidden .vcard__country-wrapper {
 	display: none;
 }
