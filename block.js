@@ -1,7 +1,6 @@
 (function( blocks, element, i18n, _ ) {
 	var __ = i18n.__;
 	var el = element.createElement;
-	var BlockDescription = blocks.BlockDescription;
 	var Editable = blocks.Editable;
 	var InspectorControls = blocks.InspectorControls;
 	var SelectControl = InspectorControls.SelectControl;
@@ -37,6 +36,8 @@
 
 	blocks.registerBlockType( 'cedaro/address', {
 		title: __( 'Address' ),
+
+		description: __( 'Display an address with Schema.org markup.' ),
 
 		icon: 'id',
 
@@ -123,7 +124,6 @@
 			}
 
 			var controls = el( InspectorControls, { key: 'inspector' },
-				el( BlockDescription, {}, __( 'Display an address with Schema.org markup.' ) ),
 				el( ToggleControl, {
 					label: __( 'Hide the country?' ),
 					checked: attributes.is_country_hidden,
