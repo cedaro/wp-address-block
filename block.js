@@ -1,11 +1,11 @@
-(function( blocks, element, i18n, _ ) {
+(function( blocks, components, element, i18n, _ ) {
 	var __ = i18n.__;
 	var el = element.createElement;
 	var Editable = blocks.Editable;
 	var InspectorControls = blocks.InspectorControls;
-	var SelectControl = InspectorControls.SelectControl;
-	var TextareaControl = InspectorControls.TextareaControl;
-	var ToggleControl = InspectorControls.ToggleControl;
+	var SelectControl = components.SelectControl;
+	var TextareaControl = components.TextareaControl;
+	var ToggleControl = components.ToggleControl;
 
 	var ADDRESS_TEMPLATE_STANDARD = '{name}\n{street}\n{city}, {state} {postal_code}\n{country}';
 	var ADDRESS_TEMPLATE_INTERNATONAL = '{name}\n{street}\n{postal_code} {city}\n{state}\n{country}';
@@ -297,6 +297,7 @@
 	});
 })(
 	window.wp.blocks,
+	window.wp.components,
 	window.wp.element,
 	window.wp.i18n,
 	window._
