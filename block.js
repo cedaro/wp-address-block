@@ -92,7 +92,6 @@
 
 		edit: function( props ) {
 			var attributes = props.attributes;
-			var focusedEditable = props.focus ? props.focus.editable || 'name' : null;
 
 			var attributeMap = {
 				name: {
@@ -186,10 +185,6 @@
 							var attributes = {};
 							attributes[ attributeName ] = value;
 							props.setAttributes( attributes );
-						},
-						focus: focusedEditable === attributeName ? props.focus : null,
-						onFocus: function( focus ) {
-							props.setFocus( _.extend( {}, focus, { editable: attributeName } ) );
 						}
 					});
 				}
@@ -211,7 +206,7 @@
 			className += attributes.is_country_hidden ? ' is-country-hidden' : '';
 
 			return [
-				props.focus && controls,
+				props.isSelected && controls,
 				el.apply( null, [ 'div', { className: className, key: 'ui' } ].concat( elements ) )
 			];
 		},
