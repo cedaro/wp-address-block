@@ -1,7 +1,7 @@
 (function( blocks, components, element, i18n, _ ) {
 	var __ = i18n.__;
 	var el = element.createElement;
-	var Editable = blocks.Editable;
+	var RichText = blocks.RichText;
 	var InspectorControls = blocks.InspectorControls;
 	var SelectControl = components.SelectControl;
 	var TextareaControl = components.TextareaControl;
@@ -172,7 +172,7 @@
 					var attributeName = token.replace( /{|}/g, '' );
 					var attributeProps = attributeMap[ attributeName ];
 
-					return el( Editable, {
+					return el( RichText, {
 						key: attributeName,
 						wrapperClassName: 'vcard__' + attributeName.replace( '_', '-' ) + '-wrapper',
 						tagName: 'span',
