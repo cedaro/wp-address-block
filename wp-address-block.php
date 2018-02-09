@@ -1,6 +1,6 @@
 <?php
 /**
- * WP Address Blcok
+ * WP Address Block
  *
  * @package   AddressBlock
  * @copyright Copyright (c) 2017, Cedaro, LLC
